@@ -4,14 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>GifTastic</title>
+    <link href="assets\css\style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">    
+	<script src="assets\javascript\gif.js"></script>
 </head>
 <body>
-    
-    <button id="sport-stars"></button>
+	<div id="fullsiteContainer" class = "container">
+		<div class="jumbotron">
+		  <h1>Sports Star Giphy Search</h1>
+		  <p>Search for superstar gifs and click on the gif itself to animate them! </p>
+		</div>
 
+		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="sidebar" align="center">
 
-    <script></script>
+			<form action="" method="POST" role="form">
+				<!-- <legend>Search for a GIF here!</legend> -->
+			
+				<div class="gif-form" align="center">
+					<label for="">GIF Search</label>
+					<input type="text" class="form-control" id="gif-input" placeholder="Please enter text here..."> 
+				</div>
+		
+				<button type="submit" class="btn btn-success" id ="searchButton">Submit</button>
+
+				<p></p>
+
+				<div id="buttonsView"></div>
+			</form>
+			
+		</div>
+
+		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id ="maincontent">
+
+			<div id="gifView"></div>
+		</div>
+
+	</div>
 
 </body>
 </html>
